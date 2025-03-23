@@ -1,29 +1,26 @@
-# Proyecto-de-titulo---UNAB---Desk-software-diabetes
--Se almacenara todo el contenido relacionado al avance del software para el proyecto de titulo.-
-
-# DiabetesApp — Gestión Local y Educación para Usuarios con Diabetes
+# DiabetesApp — Aplicación Local en Python para Educación y Control de Diabetes
 
 **Autor:** Carlos Ortiz Cárdenas  
-**Profesor Guía:** Barbarita Lara 
+**Profesor Guía:** Barbarita Lara  
 **Carrera:** Ingeniería en Computación e Informática  
 **Fecha de inicio:** Enero 2025  
-**Versión:** 1.0
+**Versión:** 1.1
 
 ---
 
-## Descripción del Proyecto
+## 📌 Descripción del Proyecto
 
-**DiabetesApp** es una aplicación local desarrollada en Python utilizando **Reactive** como framework de desarrollo. Su objetivo es apoyar a personas con diabetes en el monitoreo personalizado de su condición, junto con un módulo educativo que entregue sugerencias dinámicas adaptadas a cada usuario.
+**DiabetesApp** es una aplicación web local desarrollada en Python utilizando **[Reflex](https://reflex.dev/)** como framework principal. Su objetivo es apoyar a personas con diabetes en el monitoreo personalizado de su condición, junto con un módulo educativo que entregue sugerencias dinámicas adaptadas a cada usuario, todo funcionando sin necesidad de conexión constante a internet.
 
 ---
 
-## Problemática Detectada
+## ⚠️ Problemática Detectada
 
 En Chile, más del 11% de la población adulta sufre de diabetes. Muchos casos son detectados en etapas avanzadas, aumentando el riesgo de complicaciones graves. Las aplicaciones existentes suelen ser genéricas y dependen de conexión constante, sin adaptarse a las mediciones individuales ni ofrecer una experiencia educativa personalizada.
 
 ---
 
-## Objetivos
+## 🎯 Objetivos
 
 ### Objetivo General
 Desarrollar una aplicación local que facilite el monitoreo personalizado y la educación de los usuarios en el manejo de la diabetes, mejorando su calidad de vida.
@@ -35,30 +32,80 @@ Desarrollar una aplicación local que facilite el monitoreo personalizado y la e
 
 ---
 
-## Propuesta de Solución
+## 🔧 Producto Mínimo Viable (MVP)
 
-Una **aplicación local basada en Reactive**, accesible desde escritorio sin conexión a internet permanente, con las siguientes funcionalidades:
-- Registro manual de valores diarios.
-- Evaluación automática y entrega de recomendaciones.
-- Alertas configurables.
-- Educación interactiva y sencilla.
+- 📝 Registro manual de glicemia con fecha y hora.
+- 🍽️ Ingreso básico de alimentación (texto libre o categorías simples).
+- 🏃 Registro de actividad física con tipo y duración.
+- 💬 Sistema de recomendaciones educativas según reglas básicas.
+- 🔔 Alertas locales dentro de la aplicación.
+- 🧠 Funcionamiento completamente local usando SQLite.
+- 👤 Uso sin login para facilitar la experiencia y privacidad.
 
 ---
 
-##  Tecnologías a Utilizar
+## 🛠️ Tecnologías Utilizadas
 
 - **Lenguaje principal:** Python 3.x
-- **Framework UI:** [Reactive](https://reactive.pythonista.io/)
+- **Framework UI:** [Reflex](https://reflex.dev/)
 - **Almacenamiento:** SQLite (modo local)
 - **Control de versiones:** Git + GitHub
 - **Documentación:** Markdown (README.md), PDF (memoria técnica)
 
 ---
 
-## 🚀 Cómo Ejecutar (instrucciones futuras)
+## 🚀 Cómo Ejecutar la Aplicación (usando Reflex)
+
+### 1. Clonar el repositorio
 
 ```bash
 git clone https://github.com/tuusuario/diabetesapp.git
 cd diabetesapp
-pip install -r requirements.txt
-python main.py
+```
+
+### 2. Instalar Reflex
+
+```bash
+pip install reflex==0.7.3
+```
+
+### 3. Inicializar Reflex y correr la app
+
+```bash
+reflex init
+reflex run
+```
+
+Esto levantará un servidor local y abrirá la aplicación en tu navegador (por defecto en http://localhost:3000).
+
+---
+
+## 📁 Estructura del Proyecto (propuesta actual)
+
+```
+diabetesapp/
+├── app_diabetes/         # Código fuente del proyecto Reflex
+│   ├── __init__.py
+│   ├── app.py
+│   └── pages/            # Pantallas de la app
+├── assets/               # Íconos e imágenes
+├── reflex.json           # Configuración del proyecto Reflex
+├── .gitignore            # Archivos ignorados por Git
+├── README.md             # Este archivo
+└── requirements.txt      # Dependencias (opcional)
+```
+
+---
+
+## 🔄 Estado Actual del Proyecto
+
+- ✔️ Fase de planificación completada
+- ✔️ Interfaz inicial funcional con Reflex
+- 🔧 En desarrollo: ingreso de datos, validación de glicemia, diseño educativo
+
+---
+
+## 📘 Licencia
+
+Proyecto académico sin fines comerciales. Derechos reservados © Carlos Ortiz Cárdenas, 2025.
+
